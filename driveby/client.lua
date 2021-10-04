@@ -1,0 +1,1 @@
+SetPlayerCanDoDriveBy(GetPlayerPed(-1), false)
