@@ -1,1 +1,6 @@
-SetPlayerCanDoDriveBy(GetPlayerPed(-1), false)
+Citizen.CreateThread(function()
+    Citizen.Wait(0)
+    if IsPedInAnyVehicle(GetPlayerPed(-1)) then
+        SetPlayerCanDoDriveBy(PlayerId(), false)
+    end
+end)
